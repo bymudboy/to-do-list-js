@@ -11,7 +11,7 @@ function newTask() {
     let input = document.getElementById('input-new-task')
     input.style.border = ''
 
-    // parte da validação 
+    // Parte da validação 
     if (!input.value) {
         input.style.border = '1px solid red'
         alert('Digite uma task para inserir em sua lista')
@@ -23,7 +23,7 @@ function newTask() {
 
     else {
 
-        // increment to localStorage
+        // Increment to localStorage
         let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
         values.push({
             name: input.value
