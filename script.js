@@ -54,4 +54,12 @@ function removeItem(data) {
     showValues()
 }
 
+// adicionando a task com a tecla enter
+
+document.getElementById('input-new-task').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        newTask(); // chama a função que add a nova task
+    }
+})
+
 showValues()
